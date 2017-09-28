@@ -1,0 +1,65 @@
+<layout>
+
+    <data>
+
+        <variable
+            name="item"
+            type="kr.edcan.buspolis.model.NearBusStop" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/busName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@{item.name.ko}"
+                android:textColor="@color/textNormal"
+                android:textSize="@dimen/label_text" />
+
+            <kr.edcan.buspolis.view.CartaTagView
+                android:id="@+id/busStationLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/busStatus"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:text="@{item.stationString}"
+                android:textSize="@dimen/small_text"
+                app:textThemeColor="@color/textNormal"
+                app:textThemeColorEnabled="true"
+                app:themeColor="#54A953" />
+
+            <TextView
+                android:id="@+id/busStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="Soon"
+                android:textColor="@color/textRed"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#22000000" />
+    </LinearLayout>
+</layout>

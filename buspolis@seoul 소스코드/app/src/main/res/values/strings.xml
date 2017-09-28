@@ -1,0 +1,108 @@
+<resources>
+    <string name="app_name">Bus Polis</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="en">ENG</string>
+    <string name="cn">中文</string>
+    <string name="jp">日本語</string>
+
+
+    <string name="intro_subtitle1_en">Buspolis is bus information application\nfor travel Seoul.</string>
+    <string name="intro_subtitle1_cn">Buspolis 是首尔的旅游巴士信息应用程序。</string>
+    <string name="intro_subtitle1_jp">Buspolis は旅行ソウルのバス情報\nアプリケーションです。</string>
+    <string name="intro_subtitle2_en">Translated Bus stop name to your language.\nYou can search and check bus information to easy!</string>
+    <string name="intro_subtitle2_cn">翻译的巴士站名称为您的语言。\n您可以搜索和检查总线信息容易！</string>
+    <string name="intro_subtitle2_jp">あなたの言語に翻訳されたバス停名。\nあなたが検索し、\n簡単にバス情報を確認することができます！</string>
+    <string name="intro_subtitle3_en">We use your location information for search\nyour around bus stop.</string>
+    <string name="intro_subtitle3_cn">此应用程序使用您的位置信息搜索您的公共汽车站。</string>
+    <string name="intro_subtitle3_jp">このアプリは、\nバス停の周りに検索あなたのためのあなたの位置情報を使用しています。</string>
+
+    <string name="blue_bus_en">Blue Bus</string>
+    <string name="blue_bus_cn">青巴士</string>
+    <string name="blue_bus_jp">青いバス</string>
+    <string name="green_bus_en">Green Bus</string>
+    <string name="green_bus_cn">緑巴士</string>
+    <string name="green_bus_jp">緑のバス</string>
+    <string name="yellow_bus_en">Yellow Bus</string>
+    <string name="yellow_bus_cn">黄色巴士</string>
+    <string name="yellow_bus_jp">黄色バス</string>
+    <string name="red_bus_en">Red Bus</string>
+    <string name="red_bus_cn">红色巴士</string>
+    <string name="red_bus_jp">赤バス</string>
+
+    <string name="blue_en">Blue </string>
+    <string name="blue_cn"></string>
+    <string name="blue_jp"></string>
+    <string name="green_en">Green</string>
+    <string name="green_cn"></string>
+    <string name="green_jp"></string>
+    <string name="yellow_en">Yellow</string>
+    <string name="yellow_cn"></string>
+    <string name="yellow_jp"></string>
+    <string name="red_en">Red</string>
+    <string name="red_cn"></string>
+    <string name="red_jp"></string>
+    <string name="title_activity_maps">Maps</string>
+
+    <!-- 영문 이 아래는 번역 요구-->
+    <string name="next">Next</string>
+    <string name="set_permission">Set Permission</string>
+    <string name="perm_denied">If you do not have permission, the app can not be used.</string>
+    <string name="search_hint">Bus Number, Bus Stop...</string>
+    <string name="settings">Settings</string>
+    <string name="near_bus_stop">NEAR BUS STOP</string>
+    <string name="bus_stop">BUS STOP</string>
+    <string name="information">Information</string>
+    <string name="more">More</string>
+    <string name="search_history">SEARCH HISTORY</string>
+    <string name="refresh">Refresh</string>
+    <string name="refresh_location">Refresh Location</string>
+    <string name="help">I want people\'s help</string>
+    <string name="show_it">Please show or speak this sentence\nto other people.</string>
+
+    <string name="setting_general">General</string>
+    <string name="setting_refresh">Auto Refresh</string>
+    <string name="setting_refresh_sub">Set Auto Refresh Time</string>
+    <string name="setting_lang">Language</string>
+    <string name="setting_lang_sub">Set Language for display Bus Stop info</string>
+    <string name="setting_term">Terms &amp; Policies</string>
+    <string name="setting_tos">Terms of Service</string>
+    <string name="setting_osl">Open Source License</string>
+    <string name="setting_about">About</string>
+    <string name="setting_ver">Version</string>
+    <string name="setting_email">Contact to Email</string>
+    <string name="setting_email_sub">We support your problem</string>
+    <string name="info">Info</string>
+    <string name="bus_fare">Bus fare</string>
+    <string name="bus_route">Bus Route</string>
+    <string name="service_hours">Service Hours</string>
+    <string name="to_last_stop">to last stop</string>
+
+    <string name="patch">Patching database</string>
+    <string name="wait">Please wating some secs..</string>
+    <string name="map">Map</string>
+    <string name="search">Search</string>
+    <string name="bus_type">Bus Type</string>
+    <string name="people">People</string>
+    <string name="adult">Adult</string>
+    <string name="youth">Youth</string>
+    <string name="child">Child</string>
+    <string name="payments">Payments</string>
+    <string name="cash">Cash</string>
+    <string name="card">Card</string>
+    <string name="calculate">Calculate</string>
+    <string name="people_count">People Count</string>
+    <string name="won">won</string>
+    <string name="info_busfare">If more than two people get on the bus,\nplease tell bus driver.</string>
+    <string name="close">Close</string>
+    <string name="speak">Speak</string>
+    <string name="pay_to">Pay to</string>
+
+    <string name="main_loading">Loading...</string>
+    <string name="main_wait">Please wait some secs...</string>
+    <string name="main_err">Can\'t find any peripheral station.</string>
+    <string name="main_err_sub">Please check the location signal and refresh</string>
+    <string name="bus_err">Can\'t find any bus data.</string>
+    <string name="first_bus">First bus</string>
+    <string name="last_bus">Last bus</string>
+</resources>

@@ -1,0 +1,62 @@
+﻿<resources>
+    <string name="next">下一个</string>
+    <string name="set_permission">设置权限</string>
+    <string name="perm_denied">如果您没有权限，则无法使用该应用。</string>
+    <string name="search_hint">巴士号码，巴士站...</string>
+    <string name="settings">设置</string>
+    <string name="near_bus_stop">近端总线停止</string>
+    <string name="bus_stop">公交车站</string>
+    <string name="information">信息</string>
+    <string name="more">更多</string>
+    <string name="search_history">搜索历史</string>
+    <string name="refresh">刷新</string>
+    <string name="refresh_location">刷新位置</string>
+    <string name="help">我想要人们的帮助</string>
+    <string name="show_it">请向其他人显示或说出这句话。</string>
+
+    <string name="setting_general">一般</string>
+    <string name="setting_refresh">自动刷新</string>
+    <string name="setting_refresh_sub">设置自动刷新时间</string>
+    <string name="setting_lang">语言</string>
+    <string name="setting_lang_sub">设置显示总线停止信息的语言</string>
+    <string name="setting_term">条款和政策</string>
+    <string name="setting_tos">服务条款</string>
+    <string name="setting_osl">开源许可证</string>
+    <string name="setting_about">About</string>
+    <string name="setting_ver">Version</string>
+    <string name="setting_email">Contact to Email</string>
+    <string name="setting_email_sub">我们支持您的问题</string>
+    <string name="info">信息</string>
+    <string name="bus_fare">公交车</string>
+    <string name="bus_route">巴士路线</string>
+    <string name="service_hours">服务时间</string>
+    <string name="to_last_stop">末班车</string>
+
+    <string name="patch">修补数据库</string>
+    <string name="wait">请注意一些秒。</string>
+    <string name="map">地图</string>
+    <string name="search">搜索</string>
+    <string name="bus_type">总线类型</string>
+    <string name="people">人</string>
+    <string name="adult">成人</string>
+    <string name="youth">青年</string>
+    <string name="child">儿童</string>
+    <string name="payments">付款</string>
+    <string name="cash">现金</string>
+    <string name="card">卡</string>
+    <string name="calculate">计算</string>
+    <string name="people_count">人数</string>
+    <string name="won">won</string>
+    <string name="info_busfare">如果两个以上的人上车，请告诉公共汽车司机 </string>
+    <string name="close">关</string>
+    <string name="speak">说话</string>
+    <string name="pay_to">付款到</string>
+
+    <string name="main_loading">载入中...</string>
+    <string name="main_wait">请稍候...</string>
+    <string name="main_err">找不到任何外围站。</string>
+    <string name="main_err_sub">请检查位置信号并刷新</string>
+    <string name="bus_err">找不到任何总线数据。</string>
+    <string name="first_bus">首班车</string>
+    <string name="last_bus">末班车</string>
+</resources>

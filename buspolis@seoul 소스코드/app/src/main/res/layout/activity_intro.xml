@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <kr.edcan.buspolis.view.FixedViewPager
+        android:id="@+id/introPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent" />
+
+    <RelativeLayout
+        android:id="@+id/introCover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/introBg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/IntroLogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:padding="@dimen/splash_margin"
+            android:scaleType="centerInside"
+            android:src="@drawable/title_splash" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/splash_margin"
+            android:paddingRight="@dimen/splash_margin">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/langEng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_fill"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/en"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/default_text"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="@dimen/main_padding"
+                    android:layout_height="@dimen/small_margin" />
+
+                <TextView
+                    android:id="@+id/langCn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_border"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/cn"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/default_text"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="@dimen/main_padding"
+                    android:layout_height="@dimen/small_margin" />
+
+                <TextView
+                    android:id="@+id/langJp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_border"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/jp"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/default_text"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/element_margin" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/splash_margin"
+        android:paddingRight="@dimen/splash_margin">
+
+        <TextView
+            android:id="@+id/introNext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:background="@drawable/selector_fill"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/next"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/default_text"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/element_margin" />
+    </LinearLayout>
+</RelativeLayout>

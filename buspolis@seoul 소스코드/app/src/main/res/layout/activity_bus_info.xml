@@ -1,0 +1,150 @@
+<layout>
+
+    <data>
+
+        <variable
+            name="item"
+            type="kr.edcan.buspolis.model.RM_Bus" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="kr.edcan.buspolis.BusInfoActivity">
+        <!-- 헤더 -->
+        <!-- TODO CollapsingToolbarLayout 적용-->
+        <RelativeLayout
+            android:id="@+id/headerBackground"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="#54A953">
+
+            <ImageView
+                android:id="@+id/icBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:src="@drawable/ic_back" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/busNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/ex_large_text"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/busRouteFirst"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:textColor="@color/textLight"
+                            android:textSize="@dimen/large_text"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/busRouteMiddle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="↕"
+                            android:textColor="@color/textLight"
+                            android:textSize="@dimen/large_text"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/busRouteEnd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:textColor="@color/textLight"
+                            android:textSize="@dimen/large_text"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <kr.edcan.buspolis.view.CartaTagView
+                        android:id="@+id/busInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="bottom"
+                        android:layout_margin="@dimen/activity_horizontal_margin"
+                        android:background="@drawable/selector_border"
+                        android:clickable="true"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="40dp"
+                        android:paddingRight="40dp"
+                        android:paddingTop="8dp"
+                        android:text="@string/info"
+                        android:textSize="@dimen/default_text"
+                        app:themeColor="@android:color/white" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/busInfoRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="60dp"
+                tools:listitem="@layout/item_bus_info" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorAccent">
+
+                <kr.edcan.buspolis.view.CartaTagView
+                    android:id="@+id/busFare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/selector_border"
+                    android:clickable="true"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="60dp"
+                    android:paddingRight="60dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/bus_fare"
+                    app:themeColor="@android:color/white" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

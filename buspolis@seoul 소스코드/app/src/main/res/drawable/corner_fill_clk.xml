@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <padding
+        android:top="3dp"
+        android:left="8dp"
+        android:right="8dp"
+        android:bottom="3dp"/>
+
+    <solid android:color="@color/colorRippleL" />
+    <corners
+        android:bottomLeftRadius="@dimen/button_radius"
+        android:bottomRightRadius="@dimen/button_radius"
+        android:topLeftRadius="@dimen/button_radius"
+        android:topRightRadius="@dimen/button_radius" />
+</shape>

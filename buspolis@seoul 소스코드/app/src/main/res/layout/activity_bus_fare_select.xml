@@ -1,0 +1,275 @@
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/busFareBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/busBlue"
+        android:orientation="vertical"
+        tools:context="kr.edcan.buspolis.BusFareSelectActivity">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp">
+
+            <ImageView
+                android:id="@+id/icBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/bus_fare"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/label_text" />
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:text="@string/bus_type"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/default_text"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/blueBus"
+                    android:layout_width="@dimen/fare_circle_width"
+                    android:layout_height="@dimen/fare_circle_width"
+                    android:background="@drawable/circle_white"
+                    android:gravity="center"
+                    android:text="@string/blue_en"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/default_text" />
+
+                <TextView
+                    android:id="@+id/greenBus"
+                    android:layout_width="@dimen/fare_circle_width"
+                    android:layout_height="@dimen/fare_circle_width"
+                    android:layout_marginLeft="@dimen/text_margin"
+                    android:background="@drawable/circle_white"
+                    android:gravity="center"
+                    android:text="@string/green_en"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/default_text" />
+
+                <TextView
+                    android:id="@+id/yellowBus"
+                    android:layout_width="@dimen/fare_circle_width"
+                    android:layout_height="@dimen/fare_circle_width"
+                    android:layout_marginLeft="@dimen/text_margin"
+                    android:background="@drawable/circle_white"
+                    android:gravity="center"
+                    android:text="@string/yellow_en"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/default_text" />
+
+                <TextView
+                    android:id="@+id/redBus"
+                    android:layout_width="@dimen/fare_circle_width"
+                    android:layout_height="@dimen/fare_circle_width"
+                    android:layout_marginLeft="@dimen/text_margin"
+                    android:background="@drawable/circle_white"
+                    android:gravity="center"
+                    android:text="@string/red_en"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/default_text"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/people"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:text="@string/people"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/default_text"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/adultFare"
+                        android:layout_width="@dimen/fare_circle_width"
+                        android:layout_height="@dimen/fare_circle_width"
+                        android:background="@drawable/circle_white"
+                        android:gravity="center"
+                        android:text="@string/adult"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/default_text" />
+
+                    <TextView
+                        android:id="@+id/adultFareCnt"
+                        android:layout_width="@dimen/fare_circle_small_width"
+                        android:layout_height="@dimen/fare_circle_small_width"
+                        android:layout_marginTop="@dimen/text_margin"
+                        android:background="@drawable/circle_white_full"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/busBlue"
+                        android:textSize="@dimen/default_text" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/text_margin"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/youthFare"
+                        android:layout_width="@dimen/fare_circle_width"
+                        android:layout_height="@dimen/fare_circle_width"
+                        android:background="@drawable/circle_white"
+                        android:gravity="center"
+                        android:text="@string/youth"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/default_text" />
+
+                    <TextView
+                        android:id="@+id/youthFareCnt"
+                        android:layout_width="@dimen/fare_circle_small_width"
+                        android:layout_height="@dimen/fare_circle_small_width"
+                        android:layout_marginTop="@dimen/text_margin"
+                        android:background="@drawable/circle_white_full"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/busBlue"
+                        android:textSize="@dimen/default_text" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/text_margin"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/childFare"
+                        android:layout_width="@dimen/fare_circle_width"
+                        android:layout_height="@dimen/fare_circle_width"
+                        android:background="@drawable/circle_white"
+                        android:gravity="center"
+                        android:text="@string/child"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/default_text" />
+
+                    <TextView
+                        android:id="@+id/childFareCnt"
+                        android:layout_width="@dimen/fare_circle_small_width"
+                        android:layout_height="@dimen/fare_circle_small_width"
+                        android:layout_marginTop="@dimen/text_margin"
+                        android:background="@drawable/circle_white_full"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/busBlue"
+                        android:textSize="@dimen/default_text" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/payments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:text="@string/payments"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/default_text"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/payByCard"
+                    android:layout_width="@dimen/fare_circle_width"
+                    android:layout_height="@dimen/fare_circle_width"
+                    android:background="@drawable/circle_white"
+                    android:gravity="center"
+
+                    android:text="@string/card"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/default_text" />
+
+                <TextView
+                    android:id="@+id/payByCash"
+                    android:layout_width="@dimen/fare_circle_width"
+                    android:layout_height="@dimen/fare_circle_width"
+                    android:layout_marginLeft="@dimen/text_margin"
+                    android:background="@drawable/circle_white"
+                    android:gravity="center"
+                    android:text="@string/cash"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/default_text" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottomBarBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/busBlueDark"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/main_padding"
+            android:weightSum="2">
+
+            <kr.edcan.buspolis.view.CartaTagView
+                android:id="@+id/calculate"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_weight="1"
+                android:background="@drawable/selector_fill"
+                android:clickable="true"
+                android:text="@string/calculate"
+                app:fullMode="true"
+                app:textThemeColor="@color/busBlueDark"
+                app:textThemeColorEnabled="true"
+                app:themeColor="@android:color/white" />
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

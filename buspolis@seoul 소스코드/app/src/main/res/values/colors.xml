@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#4db6ac</color>
+    <color name="colorStatusBar">#26a69a</color>
+    <color name="colorRippleD">#99000000</color>
+    <color name="colorRippleL">#bbffffff</color>
+    <color name="colorTextSub">#bdbdbd</color>
+    <color name="colorShadow">#22222222</color>
+
+    <color name="busGreen">#66BB6A</color>
+    <color name="busGreenDark">#43A047</color>
+    <color name="busBlue">#4484F6</color>
+    <color name="busBlueDark">#4179DC</color>
+    <color name="busYellow">#FFC400</color>
+    <color name="busYellowDark">#FFAB00</color>
+    <color name="busRed">#F44336</color>
+    <color name="busRedDark">#DE4135</color>
+    <color name="textLight">#99ffffff</color>
+    <color name="textNormal">#4C4C4C</color>
+    <color name="textRed">#ff0000</color>
+</resources>
